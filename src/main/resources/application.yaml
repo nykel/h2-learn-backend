@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /h2
+spring:
+  profiles:
+    active: @mainprofile@
+  sql:
+    init:
+      mode: @spring.sql.init.mode@
+      platform: @spring.datasource.platform@
+      enabled: true
+      continue-on-error: true
+      data-locations: classpath:./scripts/h2/v1/data.sql
+      schema-locations: classpath:./scripts/h2/v1/schema.sql
+  datasource:
+    url: @db.url@
+    driverClassName: @db.driverClassName@
+    username: @db.username@
+    password: @db.password@
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+      path: /console
+      settings:
+        trace: false
+        web-allow-others: false
+        web-admin-password: 123

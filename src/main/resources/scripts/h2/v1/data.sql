@@ -1,0 +1,5 @@
+INSERT INTO Country (ID,NAME) VALUES ( 1,'USA1');
+INSERT INTO Country (ID,NAME) VALUES ( 2,'France2');
+INSERT INTO Country (ID,NAME) VALUES ( 3,'Brazil3');
+INSERT INTO Country (ID,NAME) VALUES ( 4,'Italy4');
+INSERT INTO Country (ID,NAME) VALUES ( 5,'Canada5');
