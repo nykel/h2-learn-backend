@@ -28,13 +28,13 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <mainprofile>local</mainprofile>
+                <main-profile>local</main-profile>
             </properties>
         </profile>
         <profile>
             <id>aws</id>
             <properties>
-                <mainprofile>aws</mainprofile>
+                <main-profile>aws</main-profile>
             </properties>
         </profile>
     </profiles>
@@ -66,7 +66,7 @@
 
     <build>
         <filters>
-            <filter>src/main/filters/${mainprofile}.properties</filter>
+            <filter>src/main/filters/${main-profile}.properties</filter>
         </filters>
         <resources>
             <resource>

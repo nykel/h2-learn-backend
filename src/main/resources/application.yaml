@@ -4,7 +4,7 @@ server:
     context-path: /h2
 spring:
   profiles:
-    active: @mainprofile@
+    active: @main-profile@
   sql:
     init:
       mode: @spring.sql.init.mode@
